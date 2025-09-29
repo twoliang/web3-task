@@ -1,4 +1,4 @@
-package isPalindrome
+package task1
 
 import "strconv"
 

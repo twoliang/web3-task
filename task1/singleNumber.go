@@ -1,4 +1,4 @@
-package singleNumber
+package task1
 
 import "sort"
 

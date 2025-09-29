@@ -1,4 +1,4 @@
-package removeDuplicates
+package task1
 
 import "sort"
 
