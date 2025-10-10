@@ -1,6 +1,7 @@
 package main
 
 import (
+	"web-task/blog/api"
 	"web-task/blog/utility"
 
 	"github.com/gin-gonic/gin"
@@ -14,7 +15,7 @@ func main() {
 	r := gin.Default()
 
 	// 设置路由
-	routes.SetupRoutes(r)
+	api.SetupRoutes(r)
 
 	// 启动服务器
 	r.Run(":8080") // 默认监听8080端口
