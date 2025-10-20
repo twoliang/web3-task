@@ -16,6 +16,10 @@ type UserService struct {
 	DB *gorm.DB
 }
 
+func NewUserService(db *gorm.DB) *UserService {
+	return &UserService{DB: db}
+}
+
 func (s *UserService) Register(username, email, password string) (*model.User, error) {
 	// 检查用户名/邮箱是否已存在
 	var existingUser model.User
